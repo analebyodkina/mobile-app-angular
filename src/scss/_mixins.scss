@@ -4,4 +4,10 @@
     line-height: $lh;
     font-weight: $fw;
     color: $color;
-  }
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

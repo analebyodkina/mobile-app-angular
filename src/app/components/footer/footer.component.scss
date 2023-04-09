@@ -1,0 +1,23 @@
+@import 'index';
+
+
+
+:host {
+    @include flex-between;
+}
+a:hover {
+    color: #3D3270;
+}
+.material-symbols-outlined {
+    color: $color-icons;
+    cursor: pointer;
+    transition: $transition; 
+     
+}
+.active-link {
+    .material-symbols-outlined {
+        color: #3D3270;
+        
+    }
+    
+} 
