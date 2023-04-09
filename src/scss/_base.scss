@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+}
+html {
+    font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0; 
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+ul {
+    list-style: none;
+}
+button {
+    padding: 0;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+}
+app-root {
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+router-outlet {
+    display: none;
+}
