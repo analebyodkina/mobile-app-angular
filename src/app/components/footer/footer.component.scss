@@ -6,7 +6,9 @@
     @include flex-between;
 }
 a:hover {
+    .material-symbols-outlined{
     color: #3D3270;
+    }
 }
 .material-symbols-outlined {
     color: $color-icons;
