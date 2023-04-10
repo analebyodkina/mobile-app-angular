@@ -1,0 +1,50 @@
+@import 'index';
+:host {
+    display: block;
+    margin-top: 4rem;
+    display: grid;
+    gap: 10px;
+}
+.point {    
+    border-radius: 15px;
+    padding: 2.3rem 2rem;
+    padding-right: 4.4rem;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    &._violet {
+        color: $color-violet-dark;
+        background: $color-violet-bg; 
+    }
+    &._pink {
+        color: #FF5648;
+        background: $color-red-bg; 
+        .point__desc {
+            color: #A27A7A;
+            opacity: 0.7
+        }      
+    }
+    &_arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+    }
+
+    &__icon {
+    }
+
+    &__info {
+    }
+
+    &__title {
+        @include text ($ff, 1.6rem, 1.9rem, 400, inherit); 
+    }
+
+    &__desc {
+        @include text ($ff, 1.2rem, 1.4rem, 400, inherit); 
+        opacity: 0.5;
+    }
+}
+.material-symbols-outlined {
+}
