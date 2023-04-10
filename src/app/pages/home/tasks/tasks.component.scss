@@ -1,0 +1,76 @@
+@import 'index';
+:host {
+    padding-top: 4rem;
+    display: block;
+}
+h2 {
+    @include text ($ff, 2.4rem, 2.8rem, 300, $color-titles);     
+}
+.tasks{
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: repeat(3, 1fr);    
+    &__item {
+        padding: 1.2rem;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem; 
+        div:first-child {
+            flex-grow: 1;
+        }      
+        &._grey {
+            color: $color-violet-dark; 
+            background: $color-violet-bg;           
+        }    
+        &._pink {
+            color: $color-red;
+            background: $color-red-bg;
+        }    
+        &._green {
+            color: $color-green;
+            background: $color-green-bg;
+        }
+    }
+    &__counter {               
+        @include text ($ff, 2.4rem, 2.8rem, 500, inherit); 
+        display: flex;
+        align-items: flex-start; 
+        gap: 3px;
+
+    }    
+}
+.material-symbols-outlined {
+    font-size: 10px;
+    transform: translateY(3px);
+}
+.progress {
+
+    &__title {
+        @include text ($ff, 1.8rem, 2.1rem, 300, $color-titles);
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+        span {
+            color: $color-pink;
+        }
+    }
+
+    &__line {
+        background: #FDF9FB;
+        border-radius: 5px;
+        height: 8px;
+        position: relative;
+    }
+    &__bar {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        transform: translateY(50%);
+        background: $color-pink;
+        border-radius: 5px;
+        transition: $transition;
+    }
+}
+

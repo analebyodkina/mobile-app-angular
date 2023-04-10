@@ -1,7 +1,4 @@
 @import 'index';
-:host {
-    padding-top: 2.6rem;
-}
 h2 {
     @include text ($ff, 2.4rem, 2.8rem, 300, $color-titles); 
 }
