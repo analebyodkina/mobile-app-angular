@@ -6,6 +6,7 @@ import { CoreModule } from './components/core.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

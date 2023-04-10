@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./news.component.scss']
 })
 export class NewsComponent {
+  // ЭТО МЫ ИМИТИРУЕМ КАКОЙ-ТО МАССИВ ДАННЫХ
+  news = [
+    {
+      name: 'news 1'
+    },
+    {
+      name: 'news 2'
+    },
+    {
+      name: 'news 3'
+    },
+    {
+      name: 'news 4'
+    }
+  ]
 
 }
