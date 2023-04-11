@@ -1,0 +1,30 @@
+@import 'index';
+h2 {
+    @include text ($ff, 2.4rem, 2.8rem, 300, $color-titles); 
+}
+.news {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    &__item {
+        padding: 2rem 3rem 2rem 2rem;
+        border-radius: 15px;
+        position: relative;
+        @include text ($ff, 1.2rem, 1.4rem, 500, $color-white); 
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }        
+    }
+}
+._pink {
+    background: linear-gradient(90deg, #25196B 0%, #D994A7 100%);
+    box-shadow: 0px 15px 25px rgba(115, 78, 133, 0.15);
+}
+._green {
+    background: linear-gradient(90deg, #25196B 0%, #94D9CD 100%);
+    box-shadow: 0px 15px 25px rgba(90, 116, 142, 0.15);
+}

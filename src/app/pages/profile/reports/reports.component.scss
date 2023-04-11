@@ -1,0 +1,75 @@
+@import 'index';
+:host {
+    display: block;
+    margin-top: 4rem;
+}
+h2 {
+    @include text ($ff, 2.4rem, 2.8rem, 300, $color-titles); 
+    margin-bottom: 1.5rem;
+}
+.reports {
+    display: grid;
+    column-gap: 9px;
+    row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__item {
+        border-radius: 15px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        &._violet {
+            color: $color-violet-dark;
+            background: $color-violet-bg;
+            .reports__desc {
+                @include text ($ff, 1rem, 1.2rem, 400, $color-violet-dark); 
+                opacity: 0.5;
+            }
+        }    
+        &._green {
+            color: $color-green;
+            background: $color-green-bg;
+            .reports__desc {
+                @include text ($ff, 1rem, 1.2rem, 400, #8DAEAE); 
+                opacity: 0.7;
+            }
+        }    
+        &._red {
+            color: $color-red;
+            background: $color-red-bg;
+            .reports__desc {
+                @include text ($ff, 1rem, 1.2rem, 400, #A27A7A); 
+                opacity: 0.5;
+            }
+        }    
+        &._pink {
+            color: $color-pink;
+            background: $color-pink-bg;
+            .reports__desc {
+                @include text ($ff, 1rem, 1.2rem, 400, #E791BE); 
+                opacity: 0.7;
+            }
+        }
+    }
+    &__icon {
+        .material-symbols-outlined {
+            font-size: 16px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__title {
+        @include text ($ff, 1.2rem, 1.4rem, 500, inherit);        
+        flex-grow: 1;         
+    } 
+    &__flag {
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+}

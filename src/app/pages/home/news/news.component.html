@@ -1,0 +1,37 @@
+<h2>News</h2>
+<div class="news">
+    <a href="#" class="news__item _pink">Short news title will be here
+        <img src="assets/Mask Group.png" alt="stars">
+    </a>   
+    <a href="#" class="news__item _green" *ngFor="let item of news">{{item.name}} 
+        <img src="assets/Mask Group.png" alt="stars">
+    </a>
+    
+</div>
+
+<!-- <a href="#" class="news__item _green" *ngFor="let item of [{},{},{},{},{}]">Short news title will be here
+    <img src="assets/Mask Group.png" alt="stars">
+</a>
+МОЖНО СДЕЛАТЬ ТАКУЮ КОНСТРУКЦИЮ, ЧТОБ МНОГО РАЗ ПОВТОРИТЬ ЭЛЕМЕНТ -->
+
+
+
+<!-- https://morioh.com/p/70a2202a8d51 -->
+
+<!-- ПОСЛЕ П.4 ВЫБИЛО ОШИБКУ.  -->
+
+<!-- <ngb-carousel>
+    <ng-template ngbSlide>      
+      <div class="carousel-caption">
+        <a href="#" class="news__item _pink">Short news title will be here
+            <img src="assets/Mask Group.png" alt="stars">
+        </a>
+    </ng-template>
+    <ng-template ngbSlide>      
+      <div class="carousel-caption">
+       <a href="#" class="news__item _green">Short news title will be here
+        <img src="assets/Mask Group.png" alt="stars">
+    </a>
+      </div>
+    </ng-template>
+  </ngb-carousel> -->

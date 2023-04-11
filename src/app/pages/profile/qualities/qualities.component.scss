@@ -1,0 +1,35 @@
+@import 'index';
+:host {
+    margin-top: 3rem;
+    display: block;
+}
+.title {
+    @include text ($ff, 1.4rem, 1.6rem, 500, $color-titles);
+    margin-bottom: 9px;
+}
+.sides {
+    display: inline-flex;
+    gap: 5px; 
+    flex-wrap: wrap; 
+    &:not(:last-child)  {
+        margin-bottom: 2rem;
+    } 
+	&__item {
+        padding: 8px 10px;
+        border-radius: 8px;        
+        @include text ($ff, 1.2rem, 1.4rem, 500, inherit);        
+	}
+}
+.weak-side {
+    .sides__item {
+    color: #FF7E73;
+    background: $color-red-bg;
+    }
+}
+.strong-side {
+    .sides__item {
+    color: $color-green;
+    background: $color-green-bg;
+    }
+}
+
