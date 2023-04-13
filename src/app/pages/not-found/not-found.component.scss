@@ -1,0 +1,17 @@
+@import 'index';
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    
+}
+h1 {    
+    font-size: 5rem;  
+    font-weight: 700; 
+}
+p {
+    font-size: 3rem;
+}

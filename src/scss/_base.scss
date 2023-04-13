@@ -35,6 +35,7 @@ app-root {
     display: grid;
     grid-template-rows: auto 1fr auto;
     max-width: 1200px;
+    width: 100%;
     @include min-mobile-576 {
     margin-inline: auto;
     }
