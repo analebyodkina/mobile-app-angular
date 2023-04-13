@@ -7,9 +7,10 @@ import { MyServiceService } from 'src/app/my-service.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
+  public name = ''
   constructor (public app: MyServiceService) {
     this.app.title = 'Profile'
-
   }
+  
 
 }

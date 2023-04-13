@@ -1,0 +1,21 @@
+@import 'index';
+.input {
+    margin-bottom: 4rem;
+}
+.error {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    text-align: right;    
+}
+input {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    background: $color-violet-bg;
+    color: $color-violet-dark;
+    font-size: 1.4rem;
+}
