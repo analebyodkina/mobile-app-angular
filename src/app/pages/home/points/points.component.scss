@@ -1,9 +1,12 @@
 @import 'index';
 :host {
     display: block;
-    margin-top: 4rem;
+    margin: 4rem 0;
     display: grid;
     gap: 10px;
+    @include min-mobile-576 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .point {    
     border-radius: 15px;

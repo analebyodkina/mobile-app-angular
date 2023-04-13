@@ -1,3 +1,4 @@
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -33,6 +34,10 @@ app-root {
     flex-grow: 1;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    max-width: 1200px;
+    @include min-mobile-576 {
+    margin-inline: auto;
+    }
 }
 router-outlet {
     display: none;

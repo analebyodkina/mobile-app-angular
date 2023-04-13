@@ -1,3 +1,4 @@
+
 @mixin text ($ff, $fz, $lh, $fw, $color) {
     font-family: $ff;
     font-size: $fz;
@@ -10,4 +11,51 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@mixin desktop-small-1200 {
+    @media (max-width: $desktop-small) {
+      @content;
+    }
+  }
+@mixin tablet-992 {
+    @media (max-width: $tablet) {
+      @content;
+    }
+}
+  
+@mixin tablet-small-768 {
+    @media (max-width: $tablet-small) {
+      @content;
+    }
+}
+  
+@mixin mobile-576 {
+    @media (max-width: $mobile) {
+      @content;
+    }
+}
+
+// MIN
+
+@mixin min-desktop-small-1200 {
+    @media (min-width: $desktop-small) {
+      @content;
+    }
+  }
+@mixin min-tablet-992 {
+    @media (min-width: $tablet) {
+      @content;
+    }
+}
+  
+@mixin min-tablet-small-768 {
+    @media (min-width: $tablet-small) {
+      @content;
+    }
+}
+  
+@mixin min-mobile-576 {
+    @media (min-width: $mobile) {
+      @content;
+    }
 }

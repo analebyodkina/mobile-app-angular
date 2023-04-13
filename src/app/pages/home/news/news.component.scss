@@ -7,6 +7,9 @@ h2 {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    @include min-tablet-small-768 {
+        grid-template-columns: repeat(4, 1fr);
+    }
     &__item {
         padding: 2rem 3rem 2rem 2rem;
         border-radius: 15px;
