@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tasks.component.scss']
 })
 export class TasksComponent {
+  public counter = '0'
 
 }

@@ -9,7 +9,7 @@ import { MyServiceService } from 'src/app/my-service.service';
 export class HomeComponent {
   constructor (public app: MyServiceService) {
     this.app.title = 'Home'
-
   }
+  
 
 }

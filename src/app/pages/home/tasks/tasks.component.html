@@ -1,6 +1,6 @@
 <h2>Daily Tasks:</h2>
 <div class="tasks">
-    <a href="#" class="tasks__item _grey">
+    <a href="#" class="tasks__item _grey" (click)="counter = '20'">
         <div>Daily astromeditation</div> 
         <div class="tasks__counter">
             <span>3</span>
@@ -9,7 +9,7 @@
             </span> 
         </div>           
     </a>
-    <a href="#" class="tasks__item _pink"> 
+    <a href="#" class="tasks__item _pink" (click)="counter = '50'"> 
         <div>Daily sleep astromeditation</div> 
         <div class="tasks__counter">
             <span>1</span>
@@ -18,7 +18,7 @@
             </span> 
         </div>                 
     </a>
-    <a href="#" class="tasks__item _green">
+    <a href="#" class="tasks__item _green" (click)="counter = '99'">
         <div>Daily mantra </div> 
         <div class="tasks__counter">
             <span>2</span>
@@ -29,6 +29,8 @@
     </a>
     
 </div>
+<app-progress [value] = "counter"></app-progress>
+ <!-- value это вариабл, мы передаем это значение в текст. см также .ts .scss -->
 
 
 

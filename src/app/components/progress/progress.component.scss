@@ -20,7 +20,8 @@
     &__bar {
         position: absolute;
         left: 0;
-        width: 50%;
+        width: 0%;
+        // 0 потому что значение будет приходить от value
         height: 50%;
         transform: translateY(50%);
         background: $color-pink;
