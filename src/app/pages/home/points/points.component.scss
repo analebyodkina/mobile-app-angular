@@ -8,6 +8,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.material-symbols-outlined {
+    transition: $transition;
+}
 .point {    
     border-radius: 15px;
     padding: 2.3rem 2rem;
@@ -15,14 +18,19 @@
     position: relative;
     display: flex;
     gap: 10px;
-    &._violet {
+    &._active {        
+        .material-symbols-outlined {
+            transform: rotate(-90deg);
+        }
+    }
+    &._violet{
         color: $color-violet-dark;
         background: $color-violet-bg; 
     }
     &._pink {
         color: #FF5648;
         background: $color-red-bg; 
-        .point__desc {
+        .point__desc, p {
             color: #A27A7A;
             opacity: 0.7
         }      
@@ -45,7 +53,7 @@
         margin-bottom: 1rem; 
     }
 
-    &__desc {
+    &__desc, p {
         @include text ($ff, 1.2rem, 1.4rem, 400, inherit); 
         opacity: 0.5;
     }

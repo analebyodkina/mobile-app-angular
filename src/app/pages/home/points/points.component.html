@@ -1,4 +1,4 @@
-<a href="#" class="point _violet">
+<a href="#" class="point _violet" [class._active]="toggle" (click)="toggle=!toggle">
     <div class="point__icon">
         <span class="material-symbols-outlined">
             calendar_today
@@ -8,6 +8,7 @@
         <div class="point__title">How was your day?</div>
         <div class="point__desc">Lorem ipsum dolor sit amet, consectetur
             adipscing elit. Ut vel odio en urna ultrice...</div>
+        <p *ngIf="toggle" [@openClose]="toggle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquam dolorem perferendis quae provident, modi in! Itaque labore asperiores similique doloribus placeat voluptas quibusdam velit!</p>
     </div>
     <div class="point_arrow">
         <span class="material-symbols-outlined">
@@ -15,7 +16,7 @@
         </span>
     </div>
 </a>
-<a href="#" class="point _pink">
+<a href="#" class="point _pink" [class._active]="unfold" (click)="unfold=!unfold">
     <div class="point__icon">
         <span class="material-symbols-outlined">
             schedule
@@ -25,6 +26,7 @@
         <div class="point__title">Current Transist: 3rd House</div>
         <div class="point__desc">This is demonstrate siblings, hobbies, 
             efforts, confidence, friends and short tr...</div>
+        <p *ngIf="unfold" [@openClose]="unfold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquam dolorem perferendis quae provident, modi in! Itaque labore asperiores similique doloribus placeat voluptas quibusdam velit!</p>
     </div>
     <div class="point_arrow">
         <span class="material-symbols-outlined">
