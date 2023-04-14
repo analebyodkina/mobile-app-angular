@@ -5,6 +5,7 @@ import { ProfileComponent } from './profile.component';
 import { ReportsComponent } from './reports/reports.component';
 import { QualitiesComponent } from './qualities/qualities.component';
 import { FormsModule } from '@angular/forms';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 const routes: Routes = [
   { path: '', component: ProfileComponent },  
@@ -14,7 +15,8 @@ const routes: Routes = [
   declarations: [
     ProfileComponent,
     ReportsComponent,
-    QualitiesComponent
+    QualitiesComponent,
+    UserInfoComponent
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,4 @@
+<app-user-info></app-user-info>
 <app-qualities></app-qualities>
 <app-reports></app-reports>
 <div class="input">
@@ -5,3 +6,7 @@
     <div *ngIf="name.length < 4" class="error">Name should be more than 3 symbols</div>
     <div *ngIf="!name" class="error">Name cannot be empty</div>
 </div>
+
+
+<h3 (click)="toggle=!toggle">Accordion</h3>
+<p *ngIf="toggle" [@openClose]="toggle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquam dolorem perferendis quae provident, modi in! Itaque labore asperiores similique doloribus placeat voluptas quibusdam velit!</p>
