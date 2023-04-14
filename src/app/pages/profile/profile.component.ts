@@ -17,11 +17,17 @@ import {
   animations: [
     trigger('openClose', [
       transition('void => *', [
-        style({ opacity: 0 }),
-        animate('.3s', style({ opacity: 1 })),
+        style({ opacity: 0, transform: 'translateY(-10px)' }),
+        animate('.3s', style({ 
+          opacity: 1,
+          transform: 'translateY(0)'
+        })),
       ]),
       transition('* => void', [
-        animate('.3s', style({ opacity: 0 })),
+        animate('.3s', style({ 
+          opacity: 0,
+          transform: 'translateY(-10px)'
+        })),
       ]),
     ])
   ]

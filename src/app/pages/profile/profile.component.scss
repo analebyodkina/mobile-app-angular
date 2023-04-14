@@ -1,6 +1,22 @@
 @import 'index';
-.input {
-    margin-bottom: 4rem;
+.accordion{
+    margin-top: 4rem;
+    @include flex-between;
+    h3 {
+        font-size: 2.4rem;
+    } 
+    .material-symbols-outlined {
+        transition: $transition;
+    }
+    &._active {
+        color: $color-red;
+        .material-symbols-outlined {
+            transform: rotate(180deg);
+        }
+    }   
+}
+p {
+    font-size: 1.6rem;
 }
 .error {
     color: red;

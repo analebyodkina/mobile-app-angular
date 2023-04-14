@@ -7,6 +7,11 @@
     <div *ngIf="!name" class="error">Name cannot be empty</div>
 </div>
 
+<div class="accordion" [class._active]="toggle" (click)="toggle=!toggle">
+    <h3>Accordion</h3>
+    <span class="material-symbols-outlined">
+        expand_more
+    </span>
+</div>
 
-<h3 (click)="toggle=!toggle">Accordion</h3>
 <p *ngIf="toggle" [@openClose]="toggle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquam dolorem perferendis quae provident, modi in! Itaque labore asperiores similique doloribus placeat voluptas quibusdam velit!</p>
